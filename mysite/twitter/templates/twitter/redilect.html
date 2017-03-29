@@ -1,0 +1,12 @@
+{% extends "twitter/base.html" %}
+{% block content %}
+<h1>
+{% if user.is_authenticated %}
+ユーザ名:{{ user.username }}<br>
+<!-- ユーザid:{{ user.id }}<br> -->
+{% else %}
+ようこそ、ゲスト
+{% endif %}
+</h1>
+<hr>
+{% endblock %}
